@@ -1,0 +1,72 @@
+.navbar{
+    overflow: hidden;
+    z-index: 10000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 750px;
+    height: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    transition: top 2s ease-out, height 0.4s ease-out;
+}
+.navbar_bfr{
+    top: -5%;
+}
+.navbar_aft{
+    top: 6%;
+}
+.nav_cont{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.navbar_mobile{
+    height: 200px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+.nb_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+
+    border-radius: 10px;
+    background-color: #1c1b1b;
+    color: #fffff6;
+    font-size: 95%;
+}
+
+.nb_t1{
+    margin-right: 80px;
+    cursor: pointer;
+}
+.nb_t2{
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.nb_menu_icon{
+    display: none;
+    position: absolute;
+    right: 30px;
+    width: 22px;
+
+    color: #1c1b1b;
+    cursor: pointer;
+}

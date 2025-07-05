@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduvo</title>
+    <link rel="icon" href="resources/favicon.png">
+    <!--styles link-->
+    <link rel="stylesheet" href="presets.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="queries.css">
+
+    <!--fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="navbar" class="navbar navbar_bfr">
+        <div class="nav_cont nav_cont1">
+            <div class="nb_logo"><i class="fa-solid fa-house"></i></div>
+            <a class="nb_t1" href="#banner">Moduvo</a>
+            <img src="resources/menu_icon.png" class="nb_menu_icon" onclick="navbar_menu()">
+        </div>
+        <div id="nav_cont2" class="nav_cont nav_cont2">
+            <a class="nb_t2" href="#about">About us</a>
+            <a class="nb_t2" href="#services">Services</a>
+            <a class="nb_t2" href="#stats_container">Realizations</a>
+            <a class="nb_t2" href="#contact">Contact</a>
+        </div>
+    </div>
+    
+    <section id="main_section">
+        <div class="main_container">
+            <div id="banner" class="banner_container banner_container_bfr">
+                <div class="bc_banner">
+                    <p id="bc_slogan" class="bc_slogan bc_slogan_bfr" data-anm_multiplier="0.05">CRAFTING<br>THE FUTURE</p>
+                    <div class="bc_text_container">
+                        <a href="#icons" class="bc_arrow_a"><img src="resources/arrow_icon_long.png" class="bc_arrow"></a>
+                        <p id="bct" class="bct bct_bfr prlx_element" data-anm_multiplier="0.04">We design spaces that inspire, function, and endure. Every line we draw shapes not just buildings, but the way people live, work, and connect. From bold concepts to refined details — we build with vision, precision, and purpose. Architecture is our craft. The future is our blueprint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bc_text_container_mobile"><p>We design spaces that inspire, function, and endure. Every line we draw shapes not just buildings, but the way people live, work, and connect. From bold concepts to refined details — we build with vision, precision, and purpose. Architecture is our craft. The future is our blueprint.</p></div>
+
+            <div id="icons" class="icons_container">
+                <div class="icon_cont ic_top"><i class="ic_icon fa-solid fa-user"></i><p class="ic_text">Human-Centered</p></div>
+                <div class="icon_cont ic_top"><i class="ic_icon fa-solid fa-calendar-days"></i><p class="ic_text">Timely Delivery</p></div>
+                <div class="icon_cont ic_top"><i class="ic_icon fa-solid fa-layer-group"></i><p class="ic_text">Smart Structure</p></div>
+                <div class="icon_cont"><i class="ic_icon fa-solid fa-wrench"></i><p class="ic_text">Built to Last</p></div>
+                <div class="icon_cont"><i class="ic_icon fa-solid fa-trowel-bricks"></i><p class="ic_text">Creative Process</p></div>
+                <div class="icon_cont"><i class="ic_icon fa-solid fa-tree-city"></i><p class="ic_text">Shaping Cities</p></div>
+            </div>
+            <div id="about" class="about_container">
+                <div class="ac_scont ac_scont1">
+                    <div class="ac_scont1_subc prlx_element" data-anm_multiplier="0.05">
+                        <div id="ac_cat_name" class="ac_category_name"><i class="fa-regular fa-address-book"></i><p>About us</p></div>
+                        <p id="ac_text" class="ac_text">Shaping The<br> Future of Architecture</p>
+                    </div>
+                    <img src="resources/arrow_icon.png" class="ac_arrow" onclick="actext_change_anm()">
+                </div>
+                <div class="ac_scont ac_scont2">
+                    <p class="ac_descriptions">We create architecture that connects people with space in a modern, functional way. Every project begins with a vision that leads to unique, thoughtful solutions.</p>
+                    <p class="ac_descriptions">We focus on innovation, quality, and precision in every detail we design. Collaboration is the foundation of our creative process. It allows us to build spaces that are lasting, comfortable, and inspiring.</p>
+                    <p class="ac_descriptions">We design with the future in mind, grounded in the present and the context of place. Our work is a dialogue between aesthetics and functionality. That’s how we define responsible, conscious architecture.</p>
+                </div>
+            </div>
+
+            <div id="services" class="services_container services_container_bfr">
+                <div class="sc_scont sc_scont1">
+                    <div class="service1_img">
+                        <div class="s_text_container stc_left">
+                            <div id="s_text1" class="s_text prlx_element" data-anm_multiplier="0.06">
+                                <p class="s_t1">Architecture</p>
+                                <p class="s_t2">We design spaces that balance vision with function, where every line serves both purpose and beauty. Our goal is to shape environments that stand the test of time and speak to the future.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc_scont sc_scont2">
+                    <div class="sc_sec_cont sc_sec_cont1">
+                        <div class="service2_img">
+                            <div class="s_text_container stc_right">
+                                <div id="s_text2" class="s_text prlx_element" data-anm_multiplier="0.06">
+                                    <p class="s_t1">Interior</p>
+                                    <p class="s_t2">From layout to lighting, we craft interiors that reflect lifestyle, comfort, and clarity. Every detail is considered to create spaces that feel personal, refined, and timeless.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc_sec_cont sc_sec_cont2">
+                        <div class="service3_img">
+                            <div class="s_text_container stc_left">
+                                <div id="s_text3" class="s_text prlx_element" data-anm_multiplier="0.06">
+                                    <p class="s_t1">Exterior</p>
+                                    <p class="s_t2">We shape exteriors with form, context, and durability in mind — where architecture meets environment. Materials, lines, and light come together to create bold, lasting impressions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stats_container" class="stats_container">
+                <div class="stc_text_cont"><p id="stc_text" class="stc_text stc_text_bfr">Building spaces that inspire, connect, and last.</p></div>
+                <div id="stc_scont" class="stc_scont stc_scont_bfr">
+                    <div class="stcs_left">
+                        <div id="st1" class="stats s_l s_upp"><p class="stats_t1">17k</p><p class="stats_t2">Satisfied customers</p></div>
+                        <div id="st2" class="stats s_r s_upp stats_selected"><p class="stats_t1">25+</p><p class="stats_t2">Years of experience</p></div>
+                        <div id="st3" class="stats s_l s_btm"><p class="stats_t1">6th</p><p class="stats_t2">Awward winner 2019-2025</p></div>
+                        <div id="st4" class="stats s_r s_btm"><p class="stats_t1">260+</p><p class="stats_t2">Projects made</p></div>
+                    </div>
+                    <div class="stcs_right">
+                        <div class="stcsr_cont stcsr_c1">
+                            <div class="stcsr_category_name"><i class="fa-solid fa-users-viewfinder"></i><p>Realizations</p></div>
+                            <p>With decades of experience, we bring visionary architecture to life. Each space we create is rooted in purpose — designed to elevate the way people live, work, and connect. From homes to hospitality, we turn ideas into timeless, functional realities.</p>
+                            <img class="stc_arrow" src="resources/arrow_icon_long.png">
+                        </div>
+                        <div class="stcsr_cont stcsr_c2"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contact" class="contact_container">
+                <div id="cc_scont1" class="cc_scont cc_scont1 cc_scont1_bfr">
+                    <div class="cc_category_name"><i class="fa-regular fa-comments"></i><p>Contact</p></div>
+                    <p class="cc_t1">Get In Touch Today!</p>
+                    <div class="cc_inl_input_cont">
+                        <input class="cc_input inp_inline inp_inl1" type="text" placeholder="Name">
+                        <input class="cc_input inp_inline inp_inl2" type="text" placeholder="Surname">
+                    </div>
+                    <input class="cc_input" type="text" placeholder="E-mail">
+                    <input class="cc_input" type="text" placeholder="Message">
+                    <div class="cc_sbm_button cc_button">SUBMIT</div>
+                </div>
+                <div id="cc_scont2" class="cc_scont cc_scont2 cc_scont2_bfr">
+                    <div class="cc_image_cont">
+                        <div class="cc_text_container">
+                            <a href="../../index.html" class="cc_portfolio_button cc_button">See more websites</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="../../index.html" class="copyright_text">© Mikołaj Michałowski 2024. All rights reserved</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

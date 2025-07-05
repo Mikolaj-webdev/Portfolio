@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  visibility: hidden;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/*------GHOST 2 for for scrolling to work----------------------*/
+#ghost2_section{
+  height: 150vh;
+}
+/*-------------------------------------------------------------*/
+
+/*------------SCROLL BAR------------------*/
+/*Width*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+/*Track*/
+::-webkit-scrollbar-track {
+  background: #7eaa7b;
+}
+/*Handle*/
+::-webkit-scrollbar-thumb {
+  background: #d0f8cc;
+}
+/*Handle hover*/
+::-webkit-scrollbar-thumb:hover {
+  background: #abe7a6;
+}
+/*----------------------------------------*/
+
+/*--------------Will change---------------*/
+#company_name_navbar{
+  will-change: opacity, top;
+}
+#product_container{
+  will-change: top, left, rotate, opacity, width;
+}
+#side_section{
+  will-change: left;
+}
+#purchased_container{
+  will-change: top;
+}
+#navbar_section{
+  will-change: backdrop-filter;
+}
+#ss_container{
+  will-change: left;
+}
+#product_bg_image_1{
+  will-change: top, left, opacity;
+}
+#product_bg_image_2{
+  will-change: left, opacity;
+}
+#product{
+  will-change: background-position;
+}
+.slider_button{
+  will-change: width, height;
+}
+.product_about{
+  will-change: left, opacity;
+}
+.pa_icon{
+  will-change: background-color;
+}
+#shopping_cart_icon{
+  will-change: color;
+}
+#cart_preview{
+  will-change: opacity;
+}
+#cp_price_tag{
+  will-change: left;
+}

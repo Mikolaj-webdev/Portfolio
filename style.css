@@ -1,0 +1,224 @@
+/*-------------main_container-----------*/
+.main_container{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 15vh;
+    width: 100%;
+}
+
+/*----------------about_container------------*/
+.about_container{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: max-content;
+}
+.ac_text1{
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1300%;
+
+    transition: 3s ease-out transform;
+}
+.ac_text1_bfr{
+    transform: translateX(-20%);
+}
+.ac_text1_aft{
+    transform: translateX(0%);
+}
+.ac_text1 span{
+    color: #ededed;
+}
+.ac_text2{
+    white-space: nowrap;
+    margin-top: 5vh;
+    font-size: 150%;
+    color: #aaaaaa;
+}
+.ac_text2 i{
+    margin-right: 1%;
+    color: #a2f321;
+}
+
+/*----------------projects_container------------*/
+.projects_container{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20vh;
+    width: 85%;
+    height: max-content;
+}
+
+/*Bg*/
+.pc_bg{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    width: 100vw;
+    height: 90%;
+    bottom: 0;
+}
+.pc_bg_bg{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px 0px #30303061;
+}
+.pc_bg_img{
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55vw;
+
+    transition: 3s ease-out transform;
+}
+.pc_bg_img_bfr{
+    transform: translate(0%, -80%);
+}
+.pc_bg_img_aft{
+    transform: translate(0%, -100%);
+}
+
+/*Category name*/
+.pc_category_name{
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2vh;
+    width: 100%;
+    height: max-content;
+}
+.pc_cn_line{
+    position: relative;
+    width: 10vw;
+    height: 2px;
+    background-color: #aaaaaa;
+}
+.pc_cn_text{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: #aaaaaa;
+}
+
+/*Projects*/
+.pc_wrapper{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.pc_project_cont{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.pc_pc_subcont{
+    display: flex;
+    position: relative;
+    height: max-content;
+}
+.pc_pc_subcont1{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+.pc_pc_sc1_image_cont{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    border-radius: 22px;
+}
+.pc_pc_sc1_ic_image{
+    width: 100%;
+}
+.pc_pc_sc1_name_cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    margin-top: 4vh;
+    width: 100%;
+    height: max-content;
+}
+.pc_pc_sc1_nc_text{
+    font-size: 300%;
+    color: #1a1a1a;
+}
+.pc_pc_sc1_nc_button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 7vh;
+    width: 50%;
+    border-radius: 14px;
+    background-color: #1a1a1a;
+    
+    transition: 0.3s background-color;
+}
+.pc_pc_sc1_nc_button:hover{
+    background-color: #2e2e2e;
+}
+.pc_pc_sc1_nc_button:active .pc_pc_sc1_nc_b_text{
+    font-size: 107%;
+}
+.pc_pc_sc1_nc_b_text{
+    font-size: 110%;
+    color: #ffffff;
+}
+
+.pc_pc_subcont2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 38%;
+    height: max-content;
+}
+.pc_pc_sc2_img{
+    width: 90%;
+}
+
+
+/*-----------Credits----------*/
+.credits_container{
+    z-index: 2;
+    display: flex;          
+    position: relative;   
+    margin-top: 15vh; 
+    margin-bottom: 2vh;               
+    width: 100%;         
+    height: max-content;  
+}

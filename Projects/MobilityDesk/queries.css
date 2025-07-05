@@ -1,0 +1,398 @@
+/*Smaller devices*/
+@media(max-width:1400px){
+    .mic_iac_image, .mic_ic_image{
+        height: auto;
+        width: 90%;
+        top: 30vh;
+    }
+    .lpc_mc_sc1_sc1_button{
+        margin-bottom: 1.5vh;
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .lpc_mc_subcont1{
+        width: 60%;
+    }
+    .lpc_mc_subcont2{
+        width: 40%;
+    }
+}
+
+
+/*mobile version*/
+@media(max-width:1200px){
+    .mic_iac_image, .mic_ic_image{
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+    .mic_iac_image2_bfr, .mic_iac_image3_bfr{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    .mic_iac_image2_aft, .mic_iac_image3_aft{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    .landing_page_container{
+        height: max-content;
+    }
+
+    .lpc_header_cont{
+        height: max-content;
+    }
+    .lpc_hc_s_sc_button1{
+        display: none;
+    }
+    .lpc_hc_s_sc_button p, .lpc_hc_s_sc_button i{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .lpc_hc_logo{
+        height: 10vh;
+    }
+    .lpc_hc_subcont{
+        height: max-content;
+    }
+    .lpc_hc_s_sc_button{
+        margin-left: 1vw;
+        height: 6vh;
+    }
+
+    .lpc_main_cont{
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+
+    .lpc_mc_subcont1{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+    }
+    .lpc_mc_sc1_subcont1{
+        padding-bottom: 0vh;
+        margin-top: 5vh;
+        width: max-content;
+        height: max-content;
+    }
+    .lpc_mc_sc1_sc1_button{
+        width: auto;
+        height: 7vh;
+    }
+    .lpc_mc_sc1_subcont2{
+        margin-left: 10%;
+        width: 90%;
+        height: max-content;
+    }
+    .lpc_mc_sc1_sc2_textcont{
+        width: 100%;
+        margin-top: 0vh;
+    }
+    .lpc_mc_sc1_sc2_tc_text3{
+        margin-top: 6%;
+    }
+
+    .lpc_mc_subcont2{
+        flex-direction: column;
+        margin-top: 5vh;
+        width: 100%;
+        height: max-content;
+    }
+    .lpc_mc_sc2_subcont1{
+        height: max-content;
+    }
+    .lpc_mc_sc2_sc1_text_cont{
+        height: max-content;
+    }
+    .lpc_mc_sc2_sc1_text{
+        margin-top: 2vh;
+    }
+    .lpc_mc_sc2_sc1_buttons_cont{
+        flex: 1;
+        margin-top: 5vh;
+        width: 100%;
+        height: unset;
+    }
+
+    .lpc_mc_sc2_subcont2{
+        margin-top: 2vh;
+        height: max-content;
+    }
+    .lpc_mc_sc2_sc2_input{
+        margin-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .lpc_mc_sc2_sc2_buttons_cont{
+        height: max-content;
+    }
+    .lpc_mc_sc2_sc2_bc_button{
+        margin-top: 5vh;
+        height: 8vh;
+    }
+
+
+
+    .panels_container{
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+    .pc_subcont{
+        width: 100%;
+        height: max-content;
+    }
+    .pc_sc_panel1, .pc_sc_panel2{
+        margin-top: 2vh;
+        height: max-content;
+    }
+    .pc_sc_p_tc_text2{
+        margin-top: 1vh;
+        margin-bottom: 2.5vh;
+    }
+    .pc_sc_p1_content_cont{
+        flex: unset;
+        height: max-content;
+    }
+    .pc_sc_p1_cc1_image{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .pc_sc_p1_cc1_subcont{
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        left: 0;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+    .pc_sc_p1_cc1_s_button{
+        height: 6vh;
+        width: 70%;
+    }
+
+    .pc_sc_p2_2_subcont{
+        align-items: start;
+    }
+    .pc_sc_p2_2_sc_scont{
+        height: max-content;
+    }
+    .pc_sc_p2_2_sc_scont1{
+        width: 50%;
+    }
+    .pc_sc_p2_2_sc_sc_row2{
+        flex: unset;
+        margin-top: 2vh;
+        height: 15vh;
+    }
+    .pc_sc_p2_2_sc_sc_r2_percentage_cont, .pc_sc_p2_2_sc_sc_r2_2_subcont{
+        height: 100%;
+    }
+
+
+    .car_components_container{
+        margin-top: 10vh;
+        width: 100%;
+        height: max-content;
+    }
+    .ccc_subcont{
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+    }
+    .ccc_image{
+        height: auto;
+        width: 100%;
+    }
+    .ccc_sc_panels_cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        height: max-content;
+    }
+    .ccc_panel{
+        position: relative;
+        transform: translateX(0%);
+        width: 32%;
+        height: max-content;
+    }
+    .ccc_panel1, .ccc_panel2, .ccc_panel3{
+        left: 0%;
+        top: 0;
+    }
+    .ccc_p_sc_button{
+        flex: unset;
+        height: 6vh;
+        margin-top: 2vh;
+    }
+    .ccc_p_point{
+        display: none;
+    }
+
+
+    .appointments_container{
+        flex-direction: column;
+        margin-top: 10vh;
+        width: 100%;
+        height: max-content;
+    }
+    .ac_panel{
+        margin-top: 2vh;
+        width: 100%;
+        height: max-content;
+    }
+    .ac_panel2{
+        height: 90vh;
+    }
+    .ac_panel3{
+        width: 100%;
+        height: max-content;
+    }
+    .ac_p3_img{
+        position: relative;
+        left: 0;
+        transform: translateX(0%);
+        height: auto;
+        width: 100%;
+    }
+
+
+    .cc_sc1_logo{
+        position: relative;
+        margin-right: 3%;
+        height: 15vh;
+    }
+    .cc_subcont2{
+        flex-direction: column;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .cc_sc2_scont{
+        margin-bottom: 10vh;
+    }
+    .cc_subcont3{
+        margin-top: 0vh;
+    }
+}
+
+
+
+@media(max-width:600px){
+    .pc_sc_panel{
+        justify-content: space-between;
+        padding: 2vh;
+        padding-top: 2vh;
+    }
+    .pc_sc_p_fullscreen_cont{
+        top: 2vh;
+        right: 2vh;
+        width: 6vh;
+    }
+    .pc_sc_p1_content_cont1{
+        height: 40vh;
+    }
+    .pc_sc_p1_cc1_image{
+        position: absolute;
+        width: auto;
+        height: 100%;
+    }
+    .pc_sc_p2_1_sc_sc1_row1{
+        width: 20%;
+    }
+    .pc_sc_p2_1_sc_sc1_row2{
+        width: 60%;
+    }
+    .pc_sc_p2_1_sc_sc1_r2_text1, .pc_sc_p2_1_sc_sc2_text1{
+        font-size: 200%;
+    }
+
+    .pc_sc_p2_2_subcont{
+        gap: 5vh;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+    }
+    .pc_sc_p2_2_sc_scont{
+        width: max-content;
+        height: max-content;
+    }
+    .pc_sc_p2_2_sc_sc_row1 p{
+        white-space: nowrap;
+    }
+    .pc_sc_p1_cc2_tile{
+        height: max-content;
+        padding: 2vh;
+    }
+    .pc_sc_p1_cc2_t_scont1{
+        flex: 1;
+        width: unset;
+        height: max-content;
+    }
+    .pc_sc_p1_cc2_t_sc1_pfp_cont{
+        height: 6vh;
+        margin-right: 5vw;
+    }
+    .pc_sc_p1_cc2_t_sc1_text_cont{
+        flex: 1;
+        height: 100%;
+        width: unset;
+    }
+    .pc_sc_p1_cc2_t_sc1_tc_text1{
+        position: relative;
+        font-size: 110%; 
+    }
+    .pc_sc_p1_cc2_t_sc1_tc_text2{
+        position: relative;
+        margin-top: 5%;
+        white-space: wrap;
+    }
+    .pc_sc_p1_cc2_t_scont2{
+        height: 100%;
+        width: max-content;
+    }
+    .pc_sc_p1_cc2_bc_tc_text1{
+        margin-left: 3vw;
+    }
+
+    .ccc_p_tc_text{
+        margin-left: 3vw;
+    }
+    .ccc_p_subcont{
+        margin-top: 3vh;
+    }
+    .ccc_p_sc_button, .ac_p2_sc3_bc_button{
+        text-align: center;
+    }
+
+    .ac_panel{
+        padding: 2vh;
+    }
+    .ac_p2_sc1_lmc_sc1_subcont2, .ac_p2_sc2_t_scont2{
+        display: none;
+    }
+
+    .cc_subcont1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: max-content;
+    }
+    .cc_sc1_logo{
+        height: 30vw;
+    }
+    .cc_sc1_text_cont{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: max-content;
+    }
+    .cc_sc1_tc_text1{
+        font-size: 300%;
+    }
+}

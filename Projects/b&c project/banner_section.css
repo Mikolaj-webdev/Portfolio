@@ -1,0 +1,24 @@
+/*-------------------BANNER-----------------*/
+#banner_section{
+  z-index: 7;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url(resources/images/bannerbg.jpg);
+  background-size: 100% auto;
+  background-position: 0% 100%;
+}
+
+#company_name_banner{
+  z-index: 10;
+  position: relative;
+  color: #d0f8cc;
+  font-family: 'General Sans';
+  font-weight: bold;
+  font-size: 800%;;
+
+  transition: font-size 0.2s;
+}
+/*------------------------------------------*/

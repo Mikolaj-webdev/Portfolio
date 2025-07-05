@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| MobilityDesk</title>
+    <link rel="icon" href="resources/favicon.png">
+
+    <!--Links-->
+    <link rel="stylesheet" href="presets.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+    <!--fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Main container-->
+    <div class="main_container">
+        <div class="main_image_container">
+            <div id="mic_image_animation_cont" class="mic_image_animation_cont mic_image_animation_cont_bfr mic_image_animation_cont_visible">
+                <img src="resources/270.no_wheels.png" id="mic_iac_image1" class="mic_iac_image mic_iac_image1">
+                <img src="resources/270.wheel_front.png" id="mic_iac_image2" class="mic_iac_image mic_iac_image2 mic_iac_image2_bfr">
+                <img src="resources/270.wheel_back.png" id="mic_iac_image3" class="mic_iac_image mic_iac_image3 mic_iac_image3_bfr">
+            </div>
+
+            <div id="mic_image_cont" class="mic_image_cont">
+                <img src="resources/maybach_360/270.webp" id="mic_ic_image" class="mic_ic_image mic_ic_image_hidden">
+            </div>
+        </div>
+        
+        <div id="landing_page_container" class="landing_page_container">
+            <div id="lpc_header_cont" class="lpc_header_cont lpc_header_cont_bfr">
+                <img src="resources/logo.png" class="lpc_hc_logo">
+                <div class="lpc_hc_subcont">
+                    <div class="lpc_hc_s_sc_button lpc_hc_s_sc_button1 button_default"><p>My Vechicle</p></div>
+                    <div class="lpc_hc_s_sc_button lpc_hc_s_sc_button1 button_default"><p>Service</p></div>
+                    <div class="lpc_hc_s_sc_button lpc_hc_s_sc_button1 button_default"><p>New Cars</p></div>
+                </div>
+                <div class="lpc_hc_subcont">
+                    <div class="lpc_hc_s_sc_button lpc_hc_s_sc_button1 button_default"><p>Your location: Romania, Cluj-Napoca</p></div>
+                    <div class="lpc_hc_s_sc_button lpc_hc_s_sc_button2 button_default"><i class="fa-solid fa-gear"></i></div>
+                </div>
+            </div>
+
+            <div class="lpc_main_cont">
+                <div class="lpc_mc_subcont1">
+                    <div id="lpc_mc_sc1_subcont1" class="lpc_mc_sc1_subcont1 lpc_mc_sc1_subcont1_bfr main_image_animation_element">
+                        <div class="lpc_mc_sc1_sc1_button button_default"><i class="fa-solid fa-wind"></i></div>
+                        <div class="lpc_mc_sc1_sc1_button button_default"><i class="fa-solid fa-snowflake"></i></div>
+                        <div class="lpc_mc_sc1_sc1_button button_default"><i class="fa-solid fa-lock"></i></div>
+                    </div>
+                    <div id="lpc_mc_sc1_subcont2" class="lpc_mc_sc1_subcont2 lpc_mc_sc1_subcont2_bfr main_image_animation_element">
+                        <div class="lpc_mc_sc1_sc2_textcont">
+                            <p class="lpc_mc_sc1_sc2_tc_text1">Welcome, Alex</p>
+                            <p class="lpc_mc_sc1_sc2_tc_text2 text_light">Mercedes Maybach, Nocturno</p>
+                            <p class="lpc_mc_sc1_sc2_tc_text3 text_light">28.230 km</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="lpc_mc_subcont2" class="lpc_mc_subcont2 lpc_mc_subcont2_bfr main_image_animation_element">
+                    <div class="lpc_mc_sc2_subcont1 panel_default">
+                        <div class="lpc_mc_sc2_sc1_close_button button_default"><i class="fa-solid fa-x"></i></div>
+                        <div class="lpc_mc_sc2_sc1_text_cont">
+                            <p class="lpc_mc_sc2_sc1_text">AI Vechicle Assistant</p>
+                            <input type="text" placeholder="How can I help you today?" class="lpc_mc_sc2_sc1_input input_default">
+                        </div>
+                        <div class="lpc_mc_sc2_sc1_buttons_cont">
+                            <div class="lpc_mc_sc2_sc1_bc_button lpc_mc_sc2_sc1_bc_b_active">
+                                <div class="lpc_mc_sc2_sc1_bc_b_icon_cont"><i class="fa-solid fa-car"></i></div>
+                                <div class="lpc_mc_sc2_sc1_bc_b_text_cont">
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text1">Service</p>
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text2 text_light">Maintenance</p>
+                                </div>
+                            </div>
+                            <div class="lpc_mc_sc2_sc1_bc_button">
+                                <div class="lpc_mc_sc2_sc1_bc_b_icon_cont"><i class="fa-solid fa-money-bills"></i></div>
+                                <div class="lpc_mc_sc2_sc1_bc_b_text_cont">
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text1">Loans</p>
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text2 text_light">A new car</p>
+                                </div>
+                            </div>
+                            <div class="lpc_mc_sc2_sc1_bc_button">
+                                <div class="lpc_mc_sc2_sc1_bc_b_icon_cont"><i class="fa-solid fa-car-burst"></i></div>
+                                <div class="lpc_mc_sc2_sc1_bc_b_text_cont">
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text1">Insurance</p>
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text2 text_light">Pick a plan</p>
+                                </div>
+                            </div>
+                            <div class="lpc_mc_sc2_sc1_bc_button">
+                                <div class="lpc_mc_sc2_sc1_bc_b_icon_cont"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="lpc_mc_sc2_sc1_bc_b_text_cont">
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text1">Routes</p>
+                                    <p class="lpc_mc_sc2_sc1_bc_b_tc_text2 text_light">Trips</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lpc_mc_sc2_subcont2 panel_default">
+                        <input type="text" placeholder="Send a message" class="lpc_mc_sc2_sc2_input input_default">
+                        <div class="lpc_mc_sc2_sc2_buttons_cont">
+                            <div class="lpc_mc_sc2_sc2_bc_button  button_default"><i class="fa-solid fa-microphone"></i></div>
+                            <div class="lpc_mc_sc2_sc2_bc_button  button_default"><i class="fa-solid fa-paperclip"></i></div>
+                            <div class="lpc_mc_sc2_sc2_bc_button  button_default"><i class="fa-solid fa-gear"></i></div>
+                            <div class="lpc_mc_sc2_sc2_bc_button lpc_mc_sc2_sc2_bc_button_long  button_secondary"><p>Send</p> <i class="fa-solid fa-paper-plane"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Panels container-->
+        <div class="panels_container">
+            <div id="pc_subcont1_1" class="pc_subcont pc_subcont1 pc_subcont1_1_bfr">
+                <div class="pc_sc_panel pc_sc_panel1 panel_default">
+                    <div class="pc_sc_p_fullscreen_cont button_default"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                    <div class="pc_sc_p_text_cont">
+                        <p class="pc_sc_p_tc_text1">Vechicle Location</p>
+                        <p class="pc_sc_p_tc_text2">Last updated: 10:30 AM</p>
+                    </div>
+
+                    <div class="pc_sc_p1_content_cont pc_sc_p1_content_cont1">
+                        <img src="resources/map.png" class="pc_sc_p1_cc1_image">
+                        <div class="pc_sc_p1_cc1_point"><i class="fa-solid fa-location-dot"></i></div>
+
+                        <div class="pc_sc_p1_cc1_subcont">
+                            <div class="pc_sc_p1_cc1_s_button button_secondary"><p>Save location</p></div>
+
+                            <div class="pc_sc_p1_cc1_resize_cont">
+                                <div class="pc_sc_p1_cc1_rc_scont button_default"><i class="fa-solid fa-plus"></i></div>
+                                <div class="pc_sc_p1_cc1_rc_scont button_default"><i class="fa-solid fa-minus"></i></div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div id="pc_subcont2" class="pc_subcont pc_subcont2 pc_subcont2_bfr">
+                <div class="pc_sc_panel pc_sc_panel2 panel_default">
+                    <div class="pc_sc_p_fullscreen_cont button_default"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                    <div class="pc_sc_p_text_cont">
+                        <p class="pc_sc_p_tc_text1">My Next Appointment</p>
+                        <p class="pc_sc_p_tc_text2">Today: 20 July, 2025</p>
+                    </div>
+
+                    <div class="pc_sc_p2_1_subcont">
+                        <div class="pc_sc_p2_1_sc_scont pc_sc_p2_1_sc_scont1">
+                            <div class="pc_sc_p2_1_sc_sc1_row1" onclick="panel_date_change('pc_sc_p2_1_sc_sc1_r2_text1', 'minus')"><i class="fa-solid fa-caret-left"></i></div>
+                            <div class="pc_sc_p2_1_sc_sc1_row2">
+                                <p id="pc_sc_p2_1_sc_sc1_r2_text1" class="pc_sc_p2_1_sc_sc1_r2_text1">10</p>
+                                <p class="pc_sc_p2_1_sc_sc1_r2_text2">September</p>
+                            </div>
+                            <div class="pc_sc_p2_1_sc_sc1_row1" onclick="panel_date_change('pc_sc_p2_1_sc_sc1_r2_text1', 'plus')"><i class="fa-solid fa-caret-right"></i></div>
+                        </div>
+                        <div class="pc_sc_p2_1_sc_scont pc_sc_p2_1_sc_scont2">
+                            <p class="pc_sc_p2_1_sc_sc2_text1">09:30</p>
+                            <p class="pc_sc_p2_1_sc_sc2_text2">Am</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc_sc_panel pc_sc_panel2 panel_default">
+                    <div class="pc_sc_p_fullscreen_cont button_default"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                    <div class="pc_sc_p_text_cont">
+                        <p class="pc_sc_p_tc_text1">Fuel Usage And Status</p>
+                        <p class="pc_sc_p_tc_text2">Last refueled: Today 9:30 AM</p>
+                    </div>
+
+                    <div class="pc_sc_p2_2_subcont">
+                        <div class="pc_sc_p2_2_sc_scont pc_sc_p2_2_sc_scont1">
+                            <div class="pc_sc_p2_2_sc_sc_row1"><i class="text_light fa-solid fa-gas-pump"></i> <p class="pc_sc_p2_2_sc_sc_r1_text text_light">Fuel Capacity</p></div>
+                            <div class="pc_sc_p2_2_sc_sc_row2">
+                                <div class="pc_sc_p2_2_sc_sc_r2_percentage_cont">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle class="bg" cx="50" cy="50" r="43" />
+                                        <circle class="progress" cx="50" cy="50" r="43" />
+                                    </svg>
+                                    <p>72%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pc_sc_p2_2_sc_scont pc_sc_p2_2_sc_scont2">
+                            <div class="pc_sc_p2_2_sc_sc_row1"><i class="text_light fa-solid fa-chart-simple"></i> <p class="pc_sc_p2_2_sc_sc_r1_text text_light">Economy Statistics</p></div>
+                            <div class="pc_sc_p2_2_sc_sc_row2 pc_sc_p2_2_sc_sc_row2_2">
+                                <div class="pc_sc_p2_2_sc_sc_r2_2_subcont">
+                                    <p class="pc_sc_p2_2_sc_sc_r2_2_sc_text1">~3123 KM</p>
+                                    <p class="pc_sc_p2_2_sc_sc_r2_2_sc_text2 text_light">Estimated gas usage</p>
+                                </div>
+                                <div class="pc_sc_p2_2_sc_sc_r2_2_subcont">
+                                    <p class="pc_sc_p2_2_sc_sc_r2_2_sc_text1">Average: 9l</p>
+                                    <p class="pc_sc_p2_2_sc_sc_r2_2_sc_text2 text_light">Fuel comsumption / 100km</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pc_subcont1_2" class="pc_subcont pc_subcont1 pc_subcont1_2_bfr">
+                <div class="pc_sc_panel pc_sc_panel1 panel_default">
+                    <div class="pc_sc_p_fullscreen_cont button_default"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                    <div class="pc_sc_p_text_cont">
+                        <p class="pc_sc_p_tc_text1">New Car Consultant</p>
+                        <p class="pc_sc_p_tc_text2">Call us today for a great offer</p>
+                    </div>
+
+                    <div class="pc_sc_p1_content_cont pc_sc_p1_content_cont2">
+                        <div class="pc_sc_p1_cc2_tiles_container scroll_default">
+                            <div id="panel_c_1" class="pc_sc_p1_cc2_tile" onclick="panel_consultant_changing('panel_c_1')">
+                                <div class="pc_sc_p1_cc2_t_scont1">
+                                    <div class="pc_sc_p1_cc2_t_sc1_pfp_cont"></div>
+                                    <div class="pc_sc_p1_cc2_t_sc1_text_cont">
+                                        <p id="panel_c_1_t" class="pc_sc_p1_cc2_t_sc1_tc_text1">John Carter</p>
+                                        <p class="pc_sc_p1_cc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="pc_sc_p1_cc2_t_scont2"><div class="pc_sc_p1_cc2_t_sc2_status"></div></div>
+                            </div>
+                            <div id="panel_c_2" class="pc_sc_p1_cc2_tile" onclick="panel_consultant_changing('panel_c_2')">
+                                <div class="pc_sc_p1_cc2_t_scont1">
+                                    <div class="pc_sc_p1_cc2_t_sc1_pfp_cont"></div>
+                                    <div class="pc_sc_p1_cc2_t_sc1_text_cont">
+                                        <p id="panel_c_2_t" class="pc_sc_p1_cc2_t_sc1_tc_text1">Alex Morgan</p>
+                                        <p class="pc_sc_p1_cc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="pc_sc_p1_cc2_t_scont2"><div class="pc_sc_p1_cc2_t_sc2_status"></div></div>
+                            </div>
+                            <div id="panel_c_3" class="pc_sc_p1_cc2_tile" onclick="panel_consultant_changing('panel_c_3')">
+                                <div class="pc_sc_p1_cc2_t_scont1">
+                                    <div class="pc_sc_p1_cc2_t_sc1_pfp_cont"></div>
+                                    <div class="pc_sc_p1_cc2_t_sc1_text_cont">
+                                        <p id="panel_c_3_t" class="pc_sc_p1_cc2_t_sc1_tc_text1">Luke Turner</p>
+                                        <p class="pc_sc_p1_cc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="pc_sc_p1_cc2_t_scont2"><div class="pc_sc_p1_cc2_t_sc2_status"></div></div>
+                            </div>
+                            <div id="panel_c_4" class="pc_sc_p1_cc2_tile" onclick="panel_consultant_changing('panel_c_4')">
+                                <div class="pc_sc_p1_cc2_t_scont1">
+                                    <div class="pc_sc_p1_cc2_t_sc1_pfp_cont"></div>
+                                    <div class="pc_sc_p1_cc2_t_sc1_text_cont">
+                                        <p id="panel_c_4_t" class="pc_sc_p1_cc2_t_sc1_tc_text1">Ryan Collinns</p>
+                                        <p class="pc_sc_p1_cc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="pc_sc_p1_cc2_t_scont2"><div class="pc_sc_p1_cc2_t_sc2_status"></div></div>
+                            </div>
+                            <div id="panel_c_5" class="pc_sc_p1_cc2_tile" onclick="panel_consultant_changing('panel_c_5')">
+                                <div class="pc_sc_p1_cc2_t_scont1">
+                                    <div class="pc_sc_p1_cc2_t_sc1_pfp_cont"></div>
+                                    <div class="pc_sc_p1_cc2_t_sc1_text_cont">
+                                        <p id="panel_c_5_t" class="pc_sc_p1_cc2_t_sc1_tc_text1">Jake Harris</p>
+                                        <p class="pc_sc_p1_cc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="pc_sc_p1_cc2_t_scont2"><div class="pc_sc_p1_cc2_t_sc2_status"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="pc_sc_p1_cc2_buttons_container">
+                            <div class="pc_sc_p1_cc2_bc_text_cont">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <p id="pc_sc_p1_cc2_bc_tc_text1" class="pc_sc_p1_cc2_bc_tc_text1">John Carter</p>
+                            </div>
+                            <div class="pc_sc_p1_cc2_bc_button button_secondary"><p>Make a Call</p></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Components container-->
+        <div class="car_components_container">
+            <div class="ccc_subcont">
+                <img src="resources/320_full.png" id="ccc_image" class="ccc_image ccc_image_bfr">
+                <div class="ccc_sc_panels_cont">
+                    <div id="ccc_panel1" class="ccc_panel ccc_panel1 ccc_panel1_bfr panel_default">
+                        <div class="ccc_p_point"></div>
+                        <div class="ccc_p_text_cont">
+                            <i class="text_light fa-solid fa-wrench"></i>
+                            <p class="ccc_p_tc_text text_light">Engine Issues</p>
+                        </div>
+                        <div class="ccc_p_subcont">
+                            <p class="ccc_p_sc_text"><i class="ccc_p_sc_t_icon fa-solid fa-file-circle-check"></i>No Problems Recorded</p>
+                            <div class="ccc_p_sc_button button_secondary"><p>Contact specialist</p></div>
+                        </div>
+                    </div>
+                    <div id="ccc_panel2" class="ccc_panel ccc_panel2 ccc_panel2_bfr panel_default">
+                        <div class="ccc_p_point"></div>
+                        <div class="ccc_p_text_cont">
+                            <i class="text_light fa-solid fa-car-battery"></i>
+                            <p class="ccc_p_tc_text text_light">Electrical Issues</p>
+                        </div>
+                        <div class="ccc_p_subcont">
+                            <p class="ccc_p_sc_text"><i class="ccc_p_sc_t_icon fa-solid fa-file-circle-check"></i>No Problems Recorded</p>
+                            <div class="ccc_p_sc_button button_secondary"><p>Contact specialist</p></div>
+                        </div>
+                    </div>
+                    <div id="ccc_panel3" class="ccc_panel ccc_panel3 ccc_panel3_bfr panel_default">
+                        <div class="ccc_p_point"></div>
+                        <div class="ccc_p_text_cont">
+                            <i class="text_light fa-solid fa-car-rear"></i>
+                            <p class="ccc_p_tc_text text_light">Body Issues</p>
+                        </div>
+                        <div class="ccc_p_subcont">
+                            <p class="ccc_p_sc_text"><i class="ccc_p_sc_t_icon fa-solid fa-file-circle-check"></i>No Problems Recorded</p>
+                            <div class="ccc_p_sc_button button_secondary"><p>Contact specialist</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Appointments container-->
+        <div class="appointments_container">
+            <div id="ac_panel1" class="ac_panel ac_panel1 ac_panel1_bfr panel_default">
+                <div class="ac_p_text_cont">
+                    <p class="ac_p_tc_text1">Upcoming Appointments</p>
+                    <p class="ac_p_tc_text2">Last Updated: Today 11:30 AM</p>
+                </div>
+                
+                <div class="ac_p1_content_container">            
+                    <div class="ac_p1_cc_subcont1">
+                        <div class="ac_p1_cc_sc1_text_container"><i class="text_light fa-solid fa-calendar-days"></i><p class="text_light">Next week</p></div>
+                        
+                        <div class="ac_p1_cc_sc1_calendar_cont">
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">1</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">2</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">3</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">4</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">5</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_active"><p class="text_light">6</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_right"><p class="text_light">7</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">8</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">9</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">10</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">11</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">12</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont"><p class="text_light">13</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_right"><p class="text_light">14</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">15</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">16</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">17</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">18</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">19</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">20</p></div>
+                            <div class="ac_p1_cc_sc1_cc_calday_cont ac_p1_cc_sc1_cc_calday_cont_right ac_p1_cc_sc1_cc_calday_cont_bottom"><p class="text_light">21</p></div>
+                        </div>  
+                    </div>
+
+                    <div class="ac_p1_cc_subcont2">
+                        <div class="ac_p1_cc_sc2_text_cont"><i class="text_light fa-solid fa-square-plus"></i><p class="text_light">Add new</p></div>
+                        <div class="ac_p1_cc_sc2_subcont">
+                            <div class="ac_p1_cc_sc2_sc_scont ac_p1_cc_sc2_sc_scont1">
+                                <div class="ac_p1_cc_sc2_sc_sc1_row1" onclick="panel_date_change('ac_p1_cc_sc2_sc_sc1_r2_text1', 'minus')"><i class="fa-solid fa-caret-left"></i></div>
+                                <div class="ac_p1_cc_sc2_sc_sc1_row2">
+                                    <p id="ac_p1_cc_sc2_sc_sc1_r2_text1" class="ac_p1_cc_sc2_sc_sc1_r2_text1">10</p>
+                                    <p class="ac_p1_cc_sc2_sc_sc1_r2_text2">September</p>
+                                </div>
+                                <div class="ac_p1_cc_sc2_sc_sc1_row1" onclick="panel_date_change('ac_p1_cc_sc2_sc_sc1_r2_text1', 'plus')"><i class="fa-solid fa-caret-right"></i></div>
+                            </div>
+                            <div class="ac_p1_cc_sc2_sc_scont ac_p1_cc_sc2_sc_scont2">
+                                <p class="ac_p1_cc_sc2_sc_sc2_text1">09:30</p>
+                                <p class="ac_p1_cc_sc2_sc_sc2_text2">Am</p>
+                            </div>
+                        </div>
+                        <div class="ac_p1_cc_sc2_buttons_cont">
+                            <div class="ac_p1_cc_sc2_bc_button1 ac_p1_cc_sc2_bc_button button_default"><p>Clear</p></div>
+                            <div class="ac_p1_cc_sc2_bc_button2 ac_p1_cc_sc2_bc_button button_secondary"><p>Confirm</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ac_panel2" class="ac_panel ac_panel2 ac_panel2_bfr panel_default">
+                <div class="ac_p_text_cont">
+                    <p class="ac_p_tc_text1">Received Messages</p>
+                    <p class="ac_p_tc_text2">Last Updated: Today 11:30 AM</p>
+                </div>
+
+                <div class="ac_p2_subcont1">
+                    <p class="ac_p2_sc1_text1 text_light"><i class="text_light fa-solid fa-bell"></i>Latest</p>
+                    <div class="ac_p2_sc1_latest_message_cont button_default">
+                        <div class="ac_p2_sc1_lmc_subcont1">
+                            <div class="ac_p2_sc1_lmc_sc1_subcont1">
+                                <div class="ac_p2_sc1_lmc_sc1_sc1_pfp_cont"></div>
+                                <div class="ac_p2_sc1_lmc_sc1_sc1_text_cont">
+                                    <p class="ac_p2sc1_lmc_sc1_sc1_tc_text1">John Carter</p>
+                                    <p class="ac_p2_sc1_lmc_sc1_sc1_tc_text2 text_light">Today, 11:30 AM</p>
+                                </div>
+                            </div>
+                            <div class="ac_p2_sc1_lmc_sc1_subcont2"><p class="text_light">Oil change</p></div>
+                        </div>
+                        <div class="ac_p2_sc1_lmc_subcont2"><p class="text_light">Hello, oil replacement rescheduled to 4pm...</p></div>
+                    </div>
+                </div>
+
+                <div class="ac_p2_subcont2 scroll_default">
+                    <div class="ac_p2_sc2_tile">
+                        <div class="ac_p2_sc2_t_scont1">
+                            <div class="ac_p2_sc2_t_sc1_pfp_cont"></div>
+                            <div class="ac_p2_sc2_t_sc1_text_cont">
+                                <p class="ac_p2_sc2_t_sc1_tc_text1">Alex Morgan</p>
+                                <p class="ac_p2_sc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                            </div>
+                        </div>
+                        <div class="ac_p2_sc2_t_scont2"><p class="text_light">Oil change</p></div>
+                    </div>
+                    <div class="ac_p2_sc2_tile">
+                        <div class="ac_p2_sc2_t_scont1">
+                            <div class="ac_p2_sc2_t_sc1_pfp_cont"></div>
+                            <div class="ac_p2_sc2_t_sc1_text_cont">
+                                <p class="ac_p2_sc2_t_sc1_tc_text1">Luke Turner</p>
+                                <p class="ac_p2_sc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                            </div>
+                        </div>
+                        <div class="ac_p2_sc2_t_scont2"><p class="text_light">Oil change</p></div>
+                    </div>
+                    <div class="ac_p2_sc2_tile">
+                        <div class="ac_p2_sc2_t_scont1">
+                            <div class="ac_p2_sc2_t_sc1_pfp_cont"></div>
+                            <div class="ac_p2_sc2_t_sc1_text_cont">
+                                <p class="ac_p2_sc2_t_sc1_tc_text1">Ryan Collins</p>
+                                <p class="ac_p2_sc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                            </div>
+                        </div>
+                        <div class="ac_p2_sc2_t_scont2"><p class="text_light">Oil change</p></div>
+                    </div>
+                    <div class="ac_p2_sc2_tile">
+                        <div class="ac_p2_sc2_t_scont1">
+                            <div class="ac_p2_sc2_t_sc1_pfp_cont"></div>
+                            <div class="ac_p2_sc2_t_sc1_text_cont">
+                                <p class="ac_p2_sc2_t_sc1_tc_text1">Jake Harris</p>
+                                <p class="ac_p2_sc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                            </div>
+                        </div>
+                        <div class="ac_p2_sc2_t_scont2"><p class="text_light">Oil change</p></div>
+                    </div>
+                    <div class="ac_p2_sc2_tile">
+                        <div class="ac_p2_sc2_t_scont1">
+                            <div class="ac_p2_sc2_t_sc1_pfp_cont"></div>
+                            <div class="ac_p2_sc2_t_sc1_text_cont">
+                                <p class="ac_p2_sc2_t_sc1_tc_text1">John Carter</p>
+                                <p class="ac_p2_sc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                            </div>
+                        </div>
+                        <div class="ac_p2_sc2_t_scont2"><p class="text_light">Oil change</p></div>
+                    </div>
+                    <div class="ac_p2_sc2_tile">
+                        <div class="ac_p2_sc2_t_scont1">
+                            <div class="ac_p2_sc2_t_sc1_pfp_cont"></div>
+                            <div class="ac_p2_sc2_t_sc1_text_cont">
+                                <p class="ac_p2_sc2_t_sc1_tc_text1">Alex Morgan</p>
+                                <p class="ac_p2_sc2_t_sc1_tc_text2 text_light">4 years of experience</p>
+                            </div>
+                        </div>
+                        <div class="ac_p2_sc2_t_scont2"><p class="text_light">Oil change</p></div>
+                    </div>
+                </div>
+                
+                <div class="ac_p2_subcont3">
+                    <div class="ac_p2_sc3_text_cont">
+                        <i class="ac_p2_sc3_tc_icon fa-solid fa-envelope"></i>
+                        <p class="ac_p2_sc3_tc_text">7 New Mail</p>
+                    </div>
+                    <div class="ac_p2_sc3_buttons_cont">
+                        <div class="ac_p2_sc3_bc_button ac_p2_sc3_bc_button1 button_secondary"><p>Select All</p></div>
+                        <div class="ac_p2_sc3_bc_button ac_p2_sc3_bc_button2 button_secondary"><p>Set As Received</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ac_panel ac_panel3">
+                <img src="resources/150_full.png" class="ac_p3_img">
+            </div>
+        </div>
+
+
+        <!--Footer container-->
+        <div class="credits_container">
+            <div class="cc_subcont1">
+                <a href="#" class="cc_sc1_logo"><img src="resources/logo.png"></a>
+                <div class="cc_sc1_text_cont">
+                    <p class="cc_sc1_tc_text1">MobilityDesk</p>
+                    <p class="text_light cc_sc1_tc_text2">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="cc_subcont2">
+                <div class="cc_sc2_scont">
+                    <p class="cc_sc2_sc_text1 text_light"><i class="cc_sc2_sc_t1_icon text_light fa-solid fa-file-lines"></i>Terms of agreement</p>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                </div>
+                <div class="cc_sc2_scont">
+                    <p class="cc_sc2_sc_text1 text_light"><i class="cc_sc2_sc_t1_icon text_light fa-solid fa-file-lines"></i>Terms of agreement</p>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                </div>
+                <div class="cc_sc2_scont">
+                    <p class="cc_sc2_sc_text1 text_light"><i class="cc_sc2_sc_t1_icon text_light fa-solid fa-file-lines"></i>Terms of agreement</p>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                    <a href="#" class="cc_sc2_sc_text2">Ipsum dolor sit amet lorem</a>
+                </div>
+            </div>
+            <div class="cc_subcont3"><a href="../../index.html" class="cc_sc3_copyright_text text_light">©Mikołaj Michałowski 2024. All rights reserved</a></div>
+        </div>
+    </div>
+
+
+    <!--Script link-->
+    <script src="script.js"></script>
+</body>
+</html>

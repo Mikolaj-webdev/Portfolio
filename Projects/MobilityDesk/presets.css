@@ -1,0 +1,110 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+
+    font-family: Inter;
+}
+body{
+    visibility: hidden;
+    overflow-x: hidden;
+
+    background-color: #dddddd;
+}
+
+input{
+    all: unset;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+p, i, a, input{
+    color: #303030;
+}
+.text_light{
+    color: #7e7e7e;
+}
+
+.scroll_default::-webkit-scrollbar {
+    width: 13px;
+}
+.scroll_default::-webkit-scrollbar-track{
+    border-radius: 50px;
+    background: #d2d2d2;
+}
+.scroll_default::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #bababa;
+}
+.scroll_default::-webkit-scrollbar-thumb:hover {
+    background: #c4c4c4;
+}
+
+.button_default{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background-color: #f1f1f1;
+    transition: 0.3s background-color;
+}
+.button_default:hover{
+    background-color: #ffffff;
+}
+
+.button_secondary{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 14px;
+    color: #f1f1f1;
+    background-color: #06d6a0;
+    transition: 0.3s background-color;
+}
+.button_secondary p, .button_secondary i, .button_secondary a{
+    color: #f1f1f1;
+}
+.button_secondary:hover{
+    background-color: #05e4a9;
+}
+
+
+.input_default{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 3%;
+
+    border-bottom: 2px solid #d2d2d2;
+    font-size: 110%;
+    transition: 0.3s border-bottom;
+}
+.input_default::placeholder{
+    color: #7e7e7e;
+}
+.input_default:hover{
+    border-bottom: 2px solid #05e4a9;
+}
+
+
+.panel_default{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2.5vh;
+    width: 100%;
+    border-radius: 16px;
+    background: #f1f1f1a8;
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+}

@@ -1,0 +1,237 @@
+/*-----------------MAIN SECTION-----------------*/
+#main_section{
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: #112120;
+  box-shadow: 0px 0px 90px 0px #000000;
+}
+
+.product_about{
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 100px;
+  background: rgba( 255, 255, 255, 0.1 );
+  border-radius: 50px;
+  backdrop-filter: blur( 4.5px );
+  transition: 0.2s, width 0.4s;
+}
+.product_about:hover{
+  width: 270px;
+}
+.product_about:hover .pa_icon{
+  width: 102px;
+  height: 102px;
+}
+
+.product_about_1_bfr{
+  top: 31%; /*300*/
+  left: 18%; /*350*/ /*klasik*/
+}
+.product_about_1_aft1{
+  opacity: 0;
+  top: 31%;
+  left: 12.9%; /*mniej*/
+}
+.product_about_1_aft2{
+  opacity: 0;
+  top: 31%;
+  left: 23.1%; /*wiecej*/
+}
+
+.product_about_2_bfr{
+  top: 67%; /*650*/
+  left: 66.5%; /*1250*/ /*klasik*/
+}
+.product_about_2_aft1{
+  opacity: 0;
+  top: 67%;
+  left: 61.2%; /*mniej*/
+}
+.product_about_2_aft2{
+  opacity: 0;
+  top: 67%;
+  left: 71.8%; /*wiecej*/
+}
+
+
+.pa_icon{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #0f6d67;
+  border-radius: 50px;
+  transition: width 0.4s, height 0.4s;
+}
+.pa_icon_i{
+  font-size: 250%;
+  color: #b1c9af;
+}
+
+.pa_container{
+  position: relative;
+  display: inline-flex;
+  float: right;
+  align-items: center;
+  text-align: left;
+  left: 20px;
+  width: 130px;
+  height: 60%;
+
+  font-family: satoshi;
+  font-size: 100%;
+  color: #b1c9af;
+}
+
+
+.product_container_bfr{
+  z-index: 11;
+  position: absolute;
+  top: 125vh;
+  left: 50%; /*720*/
+  transform: translateX(-50%) rotate(3deg);
+  width: 400px;
+}
+.product_container_aft{
+  z-index: 11;
+  position: fixed;
+  top: 25vh;
+  left: 50%; /*720*/
+  transform: translateX(-50%) rotate(3deg);
+  width: 400px; /*400*/
+
+  transition: left 0.5s, transform 0.5s, width 0.5s, opacity 0.5s;
+}
+.product_container_aft_ss{
+  z-index: 11;
+  position: fixed;
+  top: 25vh;
+  left: 20%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 500px;
+
+  transition: left 0.5s, transform 0.5s, width 0.5s, top 0.5s, opacity 0.5s;
+}
+.product_container_aft_ps{
+  z-index: 11;
+  position: fixed;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 400px;
+
+  transition: left 0.5s, transform 0.3s, width 0.3s, top 0.5s, opacity 0.5s;
+}
+
+
+.product_bfr{
+  width: 100%;
+
+  background:
+    url(resources/images/productlabels.png),
+    url(resources/images/product_base.png)
+  ;
+  background-size: 400% auto, auto 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 92%, 0% 0%;
+  background-blend-mode: multiply;
+  mask-image: url(resources/images/product_base.png);
+  mask-size: auto 100%;
+  aspect-ratio: 82/100;
+  transition: background-position 0.4s, opacity 0.4s, left 0.4s, top 0.4s, width 0.4s;
+}
+#product:hover{
+  width: 101%;
+}
+
+.product_bg_image{
+  user-select: none;
+  transition: 0.1s;
+}
+.product_bg_image_1_bfr{
+  position: absolute;
+  top: 505px;
+  left: 27.7%;
+  rotate: 12deg;
+  width: 285px;
+}
+.product_bg_image_1_aft{
+  position: absolute;
+  opacity: 0;
+  top: 450px;
+  left: 35%;
+  rotate: 12deg;
+  width: 15%;
+}
+.product_bg_image_2_bfr{
+  position: absolute;
+  top: 320px;
+  left: 52.3%;
+  rotate: 0deg;
+  width: 390px;
+}
+.product_bg_image_2_aft{
+  position: absolute;
+  opacity: 0;
+  top: 320px;
+  left: 45%;
+  rotate: 0deg;
+  width: 20%;
+}
+
+.slider_button{
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  top: 85.5vh;
+
+  background-color: #abe7a6;
+  background-repeat: no-repeat;
+  background-size: 70%  auto;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+.slider_button:hover{
+  top: 85vh;
+}
+
+.slider_button_bfr{
+  width: 75px;
+  height: 75px;
+}
+.slider_button_aft{
+  top: 85vh;
+  width: 85px;
+  height: 85px;
+}
+
+#sb_1{
+  background-image: url(resources/images/almondlogo.png);
+  background-position: 49% 45%;
+}
+#sb_2{
+  background-image: url(resources/images/cashewlogo.png);
+  background-position: 47% 50%;
+}
+#sb_3{
+  background-image: url(resources/images/walnutlogo.png);
+  background-position: 45% 46%;
+}
+#sb_4{
+  background-image: url(resources/images/pistachiologo.png);
+  background-position: 47% 45%;
+}
+/*------------------------------------------------------------*/

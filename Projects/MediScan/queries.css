@@ -1,0 +1,473 @@
+/*---------------smaller devices---------------*/
+@media(max-width:1600px){
+    .bc_sc1_text1_container{
+        width: 90%;
+    }
+    .bc_sc1_text2_container{
+        width: 70%;
+    }
+    .bc_sc2_callername_container{
+        width: 50%;
+    }
+    .bc_sc2_call_buttons_container{
+        width: 68%;
+    }
+    .bc_calling_container{
+        width: 15%;
+    }
+
+    .pc_text1_cont{
+        width: 50%;
+    }
+    .pc_row{
+        width: 85%;
+    }
+
+    .dc_sc1_text1_cont{
+        width: 55%;
+    }
+    .dc_sc1_text2_cont{
+        width: 40%;
+    }
+
+    .dc_sc2_dc_mc_more{
+        font-size: 250%;
+    }
+
+
+    .bnfc_sc1_sc_tc_bc_button1{
+        width: 65%;
+        font-size: 90%;
+    }
+
+    .cc_sc_sc_button{
+        width: 250px;
+    }
+}
+
+
+
+
+/*--------------------mobile version------------------*/
+@media(max-width:1200px){
+    .header_container{
+        z-index: 10;
+        position: fixed;
+        box-sizing: border-box;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #fff;
+        box-shadow: 0px 0px 24px 0px #00000049;
+    }
+    .hc_text_cont{
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 25vw;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 0px 0px 24px 0px #4e4e4e7b;
+    }
+    .hc_text_cont_bfr{
+        left: -3vw;
+        transform: translateX(-100%);
+    }
+    .hc_nav_element{
+        margin-bottom: 5vh;
+    }
+    #hc_nav_bars{
+        z-index: 11;
+        display: block;
+        position: fixed;
+        left: 20vw;
+    }
+    .banner_container{
+        flex-direction: column;
+        height: max-content;
+    }
+    .bc_subcont1{
+        height: 88vh;
+        width: 100%;
+    }
+    .bc_subcont2{
+        margin-top: 2vh;
+        height: 88vh;
+        width: 100%;
+    }
+    .bc_sc2_callername_container{
+        top: 5%;
+        left: 50%;
+        width: 35%;
+        height: 8%;
+    }
+    .bc_sc2_call_buttons_container{
+        width: 45%;
+    }
+    .bc_calling_container{
+        top: 90%;
+        width: 30%;
+        height: 4%;
+    }
+
+    .fc_sc2_service_cont{
+        padding: 2%;
+        margin-right: 4vw;
+        width: 85vw;
+    }
+    .fc_sc1_textcont{
+        width: 90%;
+    }
+    .fc_sc2_sc_button{
+        margin-top: 15%;
+        width: 70%;
+    }
+
+    .pc_row{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .pc_r_partner{
+        margin-top: 1vh;
+        height: 12vh;
+    }
+    .pc_r_p_short{
+        width: 44%;
+    }
+    .pc_r_p_long{
+        width: 54%;
+    }
+
+    .doctors_container{
+        width: 100%;
+        height: max-content;
+    }
+    .dc_subcont1{
+        width: 100%;
+        height: max-content;
+    }
+    .dc_sc1_text1_cont{
+        width: 95%;
+    }
+    .dc_sc1_text2_cont{
+        width: 80%;
+    }
+    .dc_subcont2{
+        box-sizing: border-box;
+        padding-top: 5vh;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: max-content;
+    }
+    .dc_sc2_doctor_cont{
+        margin-top: 12vh;
+        padding: 6%;
+        padding-top: 5%;
+        padding-right: 8%;
+        width: 85%;
+        height: 45vh;
+    }
+    .dc_sc2_doctor_cont1{
+        z-index: 4;
+    }
+    .dc_sc2_doctor_cont2{
+        z-index: 3;
+    }
+    .dc_sc2_doctor_cont3{
+        z-index: 2;
+    }
+    .dc_sc2_dc_more_cont{
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .qc_text1{
+        font-size: 350%;
+    }
+    .qc_button{
+        margin-top: 10%;
+        width: 70%;
+    }
+
+
+    .benefits_container{
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+    .bnfc_subcont1{
+        width: 100%;
+        height: 70vh;
+    }
+    .bnfc_sc1_doctor_cont2{
+        right: 1%;
+        top: 25%;
+    }
+    .bnfc_sc1_subcont{
+        width: 80%;
+    }
+    .bnfc_subcont2{
+        margin-top: 4vh;
+        padding: 7%;
+        width: 100%;
+        height: max-content;
+    }
+    .bnfc_sc2_text2_cont{
+        margin-bottom: 5%;
+        width: 85%;
+    }
+    .bnfc_sc2_benefits{
+        flex-direction: column;
+        margin-top: 6%;
+        width: 100%;
+        height: max-content;
+    }
+    .bnfc_sc2_bnf_subcont1, .bnfc_sc2_bnf_subcont2{
+        width: 100%;
+        height: 50%;
+    }
+    .bnfc_sc2_button{
+        margin-top: 5%;
+        width: 60%;
+        height: 70px;
+    }
+
+    .qc2_image{
+        width: auto;
+        height: 170%;
+    }
+    .qc2_button{
+        margin-top: 6%;
+        width: 60%;
+    }
+
+
+    .credits_container{
+        padding-top: 10vh;
+    }
+    .cc_subcontainer{
+        flex-direction: column;
+        align-items: center;
+        width: max-content;
+        height: max-content;
+    }
+    .cc_sc_subcont{
+        height: 25%;
+        width: max-content;
+    }
+    .cc_sc_subcont2{
+        margin-top: 7vh;
+    }
+    .cc_sc_sc_cc_logo{
+        height: 10vh;
+    }
+    .cc_sc_sc_cc_name{
+        margin-left: 10%;
+        font-size: 130%;
+    }
+    .cc_sc_sc_button{
+        margin-top: 5vh;
+        width: 50vw;
+        height: 7vh;
+    }
+
+    .cc_ct_container{
+        margin-top: 7vh;
+        width: 50vw;
+    }
+}
+
+@media(max-width:800px){
+    .hc_text_cont{
+        width: 35vw;
+    }
+    #hc_nav_bars{
+        left: 30vw;
+        transform: translateX(-50%);
+    }
+
+    .bc_sc1_text1_container{
+        margin-top: 5%;
+    }
+    .bc_sc1_text1{
+        font-size: 500%;
+    }
+    .bc_sc1_text2{
+        font-size: 100%;
+    }
+    .bc_sc1_button{
+        margin-top: 10%;
+    }
+
+    .about_container{
+        flex-direction: column;
+        margin-top: 10vh;
+        height: 84vh;
+    }
+    .ac_subcont1{
+        width: 100%;
+        height: 40%;
+    }
+    .ac_subcont2{
+        width: 100%;
+        height: 40%;
+    }
+
+    .pc_text1_cont{
+        width: 95%;
+    }
+    .pc_text2_cont{
+        margin-bottom: 5%;
+        width: 80%;
+    }
+
+    .dc_sc2_dc_pfp_cont{
+        width: 80px;
+    }
+    .dc_sc2_dc_more_cont{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media(max-width:600px){
+    .hc_text_cont{
+        width: 65vw;
+    }
+    #hc_nav_bars{
+        left: 55vw;
+        transform: translateX(-50%);
+    }
+    .hc_icon{
+        height: 90%;
+    }
+    .hc_company_name{
+        margin-left: 5%;
+    }
+    .hc_button{
+        display: none;
+    }
+
+
+    .bc_subcont1{
+        box-sizing: border-box;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        height: max-content;
+        width: 100%;
+    }
+    .bc_subcont2{
+        margin-top: 2vh;
+        height: 88vh;
+        width: 100%;
+    }
+    .bc_sc1_nav_cont{
+        flex-direction: column;
+        padding: 2%;
+        width: 90%;
+        height: max-content;
+        border-radius: 11px;
+    }
+    .bc_sc1_nc_text2{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .bc_sc1_text1_container{
+        margin-top: 5%;
+    }
+    .bc_sc1_text1{
+        font-size: 400%;
+    }
+    .bc_sc1_button{
+        margin-top: 13%;
+        height: 10vh;
+    }
+
+    .bc_sc2_callername_container{
+        width: 70%;
+        height: 70px;
+    }
+    .bc_sc2_call_buttons_container{
+        width: 85%;
+        height: 100px;
+    }
+    .bc_calling_container{
+        padding-left: 2%;
+        top: 90%;
+        left: 30%;
+        width: 55%;
+        height: 4%;
+    }
+
+    .about_container{
+        flex-direction: column;
+        margin-top: 10vh;
+        height: max-content;
+    }
+    .ac_subcont1{
+        box-sizing: border-box;
+        padding: 5vh;
+        width: 100%;
+        height: max-content;
+    }
+    .ac_sc1_text2{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .ac_subcont2{
+        margin-top: 15vh;
+        width: 100%;
+        height: 30vh;
+    }
+
+
+    .dc_sc2_doctor_cont{
+        padding: 10%;
+        padding-top: 22%;
+        padding-right: 20%;
+        width: 85%;
+        height: max-content;
+    }
+    .dc_sc2_dc_more_cont{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .qc_text1{
+        font-size: 250%;
+    }
+    .qc_button{
+        margin-top: 15%;
+        width: 85%;
+        height: 60px;
+    }
+
+    .bnfc_sc2_button{
+        width: 80%;
+    }
+
+
+    .quote_container2{
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+    .qc2_button{
+        margin-top: 6%;
+        width: 70%;
+        height: 70px;
+    }
+
+    .cc_sc_sc_button{
+        width: 85vw;
+        height: 70px;
+    }
+    .cc_ct_container{
+        width: 85vw;
+    }
+}

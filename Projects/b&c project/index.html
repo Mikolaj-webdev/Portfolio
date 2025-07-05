@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="resources/images/icon.png">
+        <!--Styles-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        <link rel="stylesheet" href="presets.css">
+        <link rel="stylesheet" href="navbar+cart_preview.css">
+        <link rel="stylesheet" href="banner_section.css">
+        <link rel="stylesheet" href="main_section.css">
+        <link rel="stylesheet" href="side_section.css">
+        <link rel="stylesheet" href="purchased_section.css">
+        <link rel="stylesheet" href="credits_section.css">
+
+        <link rel="stylesheet" href="queries.css">
+        <link rel="stylesheet" href="not_supported_res_warning.css">
+        <!--Fonts-->
+        <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600&display=swap" rel="stylesheet">
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+        <title>Beauty & Creams | Shop</title>
+    </head>
+    <body>
+        <!--When device resolution is too small-->
+        <section id="not_supported_res_warning">
+            <div id="nsr_container">
+                <p id="nsr_t1">This website does not support your device screen!</p>
+                <p id="nsr_t2">Please try again on desktop</p>
+                <a href="../../index.html" id="nsr_button">See more websites</a>
+            </div>
+        </section>
+
+        <!--Navbar section-->
+        <section id="navbar_section" class="navbar_section_bfr">
+            <p id="company_name_navbar" class="navbar_elements company_name_navbar_bfr"><b>Beauty & Creams</b></p>
+            <i id="shopping_cart_icon" class="fa-solid fa-cart-shopping fa-lg" style="--fa-animation-duration: 2s;" onclick="cartpreview()"></i>
+
+            <!--Cart preview-->
+            <div id="cart_preview">
+                <p id="cp_text">Cart</p>
+     
+                <div id="cp_container">
+                    <p id="cp_cont_text">No items in cart</p> 
+                    <ul>
+                        <li id="cp_cont_li0" class="cp_cont_li">Almond cream x1 - 14.99$</li>
+                        <li id="cp_cont_li1" class="cp_cont_li">Cashew cream x1 - 13.99$</li>
+                        <li id="cp_cont_li2" class="cp_cont_li">Walnut cream x1 - 12.99$</li>
+                        <li id="cp_cont_li3" class="cp_cont_li">Pistachio cream x1 - 15.99$</li>
+                    </ul>
+                </div>
+                
+                <p id="cp_price_tag">Price: 0$</p>
+                <div id="cp_button" class="cp_button">Buy</div>
+            </div>
+        </section>
+
+        <!--Banner section-->
+        <section id="banner_section">
+            <p id="company_name_banner">Beauty & Creams</p>
+        </section>
+
+        <!--1 ghost section for realistic scrolling effect-->
+        <section id="ghost1_section"></section>
+
+        <!--Main section-->
+        <section id="main_section">
+            <div id="product_about_1" class="product_about product_about_1_bfr">
+                <div id="pa_icon_1" class="pa_icon"><i id="pa_icon_i1" class="pa_icon_i fa-solid fa-wheat-awn"></i></div>
+                <div class="pa_container"><p id="pa_text_1" class="pa_text">Natural ingredients only</p></div>
+            </div>
+
+            <div id="product_about_2" class="product_about product_about_2_bfr">
+                <div id="pa_icon_2" class="pa_icon"><i id="pa_icon_i2" class="pa_icon_i fa-solid fa-spa"></i></div>
+                <div class="pa_container"><p id="pa_text_2" class="pa_text">Perfectly soft consistency</p></div>
+            </div>   
+
+            <img id="product_bg_image_1" class="product_bg_image product_bg_image_1_bfr" src="resources/images/productbgimage01.png">
+            <img id="product_bg_image_2" class="product_bg_image product_bg_image_2_bfr" src="resources/images/productbgimage02.png">
+            <div id="sb_1" class="slider_button slider_button_aft" onclick="productswitch(0)"></div><div id="sb_2" class="slider_button slider_button_bfr" onclick="productswitch(1)"></div><div id="sb_3" class="slider_button slider_button_bfr" onclick="productswitch(2)"></div><div id="sb_4" class="slider_button slider_button_bfr" onclick="productswitch(3)"></div>
+        </section>
+        <!--Product container outside main section for visibility(index) reasons-->
+        <div id="product_container" class="product_container_bfr">
+            <div id="product" class="product_bfr"></div>
+        </div>
+
+        <!--Side section-->
+        <section id="side_section" class="side_section_bfr">
+            <div id="ss_container" class="ss_container_bfr">
+                <img id="product_bg_image_2_ss" class="product_bg_image_2_ss_bfr" src="resources/images/productbgimage02.png">
+
+                <div id="ss_text_cont_1" class="ss_text_container"><p id="ss_text_1" class="ss_text">NATURAL<br>CREAM</p></div>
+                <div id="ss_text_cont_2" class="ss_text_container"><p id="ss_text_2" class="ss_text">ALMONDS</p></div>
+
+                <div id="ss_text_price_cont"><p id="ss_text_price" class="ss_text">$14.99</p></div>
+                <div id="ss_review_cont"><div id="ss_review_1" class="ss_review">★&nbsp;★&nbsp;★&nbsp;★&nbsp;★</div><div id="ss_review_2" class="ss_review">(1123)</div><div id="ss_review_3" class="ss_review">WRITE A REVIEW</div></div>
+                
+                <div id="ss_text_cont_3"><p id="ss_text_3" class="ss_text">Discover the nourishing power of Natural Almonds Cream, crafted with pure, plant-based ingredients for gentle and effective care. Its smooth, velvety texture glides effortlessly, hydrating your skin and leaving it irresistibly soft. Free from artificial additives, it’s the perfect choice for natural, everyday pampering!</p></div>
+            
+                <div id="ss_add_to_cart_btn" class="ss_btn" onclick="cartadd()">ADD TO CART <i id="ss_shopping_cart_icon" class="fa-solid fa-cart-shopping fa-med"></i></div>
+                <div id="ss_amount_btn" class="ss_btn">
+                    <p class="ss_amount_btn_type" onclick="cartamount('more')">+</p>
+                    <p id="ss_amount_btn_value">1</p>
+                    <p class="ss_amount_btn_type" onclick="cartamount('less')">-</p>
+                </div>
+            </div>
+        </section>
+
+        <!--2 ghost section for realistic scrolling effect-->
+        <section id="ghost2_section"></section>
+
+        <!--Purchased section-->
+        <section id="purchased_section">
+            <div id="purchased_container" class="purchased_container_bfr">
+                <div id="pc_text_cont_1">
+                    <p id="pc_text_1" class="pc_text">THANK YOU</p>
+                    <p id="pc_text_2" class="pc_text">FOR</p>
+                </div>
+                <p id="pc_text_3" class="pc_text">YOUR PURCHASE</p><br>
+                <img id="paper_bag_image" src="resources/images/paperbag.png">
+
+                <img id="ps_bg_image_1" class="ps_bg_image" src="resources/images/productbgimage32.png">
+                <img id="ps_bg_image_2" class="ps_bg_image" src="resources/images/productbgimage12.png">
+            </div>
+        </section>
+        
+       <!--Credits section-->
+       <section id="credits_section">
+            <div id="cs_container_1">
+                <div id="cs_block_1" class="cs_block">
+                    <p id="credits_b1_1" class="credits_b1">Contact</p>
+                    <p id="credits_b1_2" class="credits_b1">m.mikolaj.business@gmail.com</p>
+                </div>
+                <div  id="cs_block_2" class="cs_block">
+                    <p id="credits_b2_1" class="credits_b2">See more websites</p>
+                    <a href="../../index.html" id="portfolio_button">Portfolio</a>
+                </div>
+            </div>
+
+            <div id="cs_container_2">
+                <a href="../../index.html" id="credits_t_1" class="credits_t">Mikołaj Michałowski</a>
+                <a href="../../index.html" id="credits_t_2" class="credits_t">© Mikołaj Michałowski 2024. All rights reserved</a>
+            </div>
+       </section>
+
+       <!--Script links-->
+       <script src="script.js"></script>
+    </body>
+</html>

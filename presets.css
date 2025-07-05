@@ -1,0 +1,22 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+
+    font-family: inter;
+}
+body{
+    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+
+    transition: 3s ease-out opacity;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+p, i, a{
+    color: #1a1a1a;
+}

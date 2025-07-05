@@ -1,0 +1,30 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+
+    font-family: Inter;
+}
+body{
+    opacity: 0;
+    visibility: hidden;
+    overflow-x: hidden;
+
+    background-color: #ffffff;
+    transition: opacity 3s;
+}
+
+a{
+    all: unset;
+    
+    color: #0a090d;
+    cursor: pointer;
+}
+p{
+    color: #0a090d;
+}
+
+.t1_headline{
+    background: linear-gradient(90deg,rgba(141, 83, 193, 1) 0%, rgba(114, 78, 200, 1) 68%, rgba(113, 78, 203, 1) 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

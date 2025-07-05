@@ -1,0 +1,407 @@
+/*---------smaller devices---------------*/
+@media(max-width: 1400px){
+    .bc_slogan{
+        font-size: 1000%;
+    }
+    .bc_pattern{
+        transform: translateX(20%);
+    }
+
+    .partners{
+        height: 9vh;
+        width: 9vh;
+    }
+
+    .ac_text1_cont{
+        margin-bottom: 1.5%;
+        width: 100%;
+    }
+    .ac_text2_cont{
+        width: 60%;
+    }
+
+    .services_container{
+        height: 45vh;
+    }
+    .sc_text_container{
+        width: 92%;
+    }
+    .sctc_button{
+        margin-top: 6%;
+    }
+
+    .projects_container{
+        width: 85%;
+    }
+    .pc_left_cont{
+        width: 30%;
+    }
+    .pc_right_cont{
+        width: 70%;
+    }
+    .pc_lc_arrow{
+        width: 50%;
+    }
+
+    .prices_container{
+        flex-direction: column;
+        margin-top: 15vh;
+        height: max-content;
+    }
+    .pc_scont{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        border-radius: 22px;
+    }
+    .pc_scont2{
+        margin-top: 10vh;
+    }
+    .pcs_text3{
+        margin-bottom: 5%;
+    }
+
+    .ac2_text1_cont{
+        margin-bottom: 1.5%;
+        width: 100%;
+    }
+    .ac2_text2_cont{
+        width: 60%;
+    }
+
+    .fc_f_logo{
+        width: 25%;
+    }
+
+    .contact_details_container{
+        width: 90%;
+    }
+    .cdc_text_container{
+        padding-left: 20%;
+    }
+    .cdc_left_cont{
+        width: 50%;
+    }
+    .cdc_right_cont{
+        width: 50%;
+    }
+    .cdcrc_location_cont{
+        font-size: 90%;
+    }
+
+    .contact_container{
+        width: 80%;
+        height: max-content;
+    }
+    .ccsc2_ic_image{
+        width: 100%;
+    }
+
+    .credits_logo{
+        width: 70%;
+    }
+    .credits_arrow{
+        height: 60%;
+    }
+    .creditsc2_scont2_button{
+        height: 15%;
+        width: 50%;
+    }
+    .creditsc2_scont2_button:active{
+        width: 52%;
+    }
+    .credits_pattern{
+        right: -16%;
+    }
+}
+
+
+/*-----------mobile---------------*/
+@media(max-width: 1100px){
+    .bch_slogan{
+        display: none;
+    }
+    .bch_slogan_mobile{
+        display: unset;
+    }
+    .bch_button{
+        width: 35%;
+        height: 4vh;
+    }
+
+    .partners_scont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+    }
+    .partners_scont_up{
+        margin-bottom: 5vh;
+    }
+
+    .about_container{
+        width: 80%;
+    }
+    .ac_text1_cont{
+        font-size: 400%;
+    }
+    .ac_text2_cont{
+        width: 80%;
+    }
+
+    .services_container{
+        height: max-content;
+        width: 75%;
+    }
+    .sc_pattern{
+        display: none;
+    }
+    .sc_pattern_mobile{
+        display: unset;
+    }
+    .sc_text_container{
+        overflow: hidden;
+        align-items: center;
+        padding-left: 0%;
+        width: 100%;
+    }
+    .sctc_scont{
+        width: 80%;
+    }
+    .sctc_text1{
+        margin-top: 20%;
+    }
+    .sctc_text2_cont {
+        width: 100%;
+    }
+    .sctc_button{
+        margin-top: 20%;
+        margin-bottom: 60%;
+        width: 100%;
+    }
+
+    .projects_container{
+        flex-direction: column;
+        margin-top: 20vh;
+        height: 220vh;
+        width: 80%;
+    }
+    .pc_left_cont{
+        width: 100%;
+        height: 20%;
+    }
+    .pc_right_cont{
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+    .pc_rc_scont{
+        width: 100%;
+        height: 49%;
+    }
+    .pc_project_img{
+        height: auto;
+        width: 100%;
+    }
+    .pc_project_img1{
+        transform: translateX(0%);
+    }
+    .pc_project_img2{
+        transform: translateX(0%);
+    }
+
+    .pcs_text3{
+        margin-bottom: 10%;
+    }
+
+    .about2_container{
+        width: 80%;
+    }
+    .ac2_text1_cont{
+        font-size: 400%;
+    }
+    .ac2_text2_cont{
+        width: 80%;
+    }
+
+    .fieldsofwork_container{
+        height: max-content;
+    }
+    .fc_text_cont{
+        padding-top: 15%;
+        padding-bottom: 10%;
+        box-sizing: border-box;
+        height: max-content;
+    }
+    .fc_text1{
+        font-size: 300%;
+    }
+    .fc_text2_cont{
+        width: 60%;
+    }
+    .fc_fields_container{
+        padding-bottom: 5%;
+        box-sizing: border-box;
+        flex-direction: column;
+        flex-wrap:unset;
+        height: max-content;
+    }
+    .fc_fields{
+        padding-left: 20%;
+        padding-right: 20%;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .contact_details_container{
+        height: 90vh;
+    }
+    .cdc_pattern{
+        height: 50%;
+        left: 75%;
+    }
+    .cdc_text_container{
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        height: 100%;
+        width: 100%;
+    }
+    .cdc_left_cont{
+        padding-left: 5%;
+        box-sizing: border-box;
+        height: 50%;
+        width: 100%;
+    }
+    .cdc_right_cont{
+        height: 45%;
+        width: 100%;
+    }
+
+    .contact_container{
+        flex-direction: column;
+        height: max-content;
+    }
+    .cc_scont1{
+        width: 100%;
+        height: 50%;
+    }
+    .ccsc1_input_cont{
+        width: 100%;
+    }
+    .cc_scont2{
+        margin-top: 30%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .credits_container{
+        height: max-content;
+    }
+    .credits_main_cont{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 15%;
+        width: 100%;
+        height: 100%;
+    }
+    .credits_pattern{
+        display: none;
+    }
+    .credits_media_cont{
+        flex-direction: column;
+    }
+    .credits_media_icon{
+        margin-right: 0%;
+        margin-top: 10%;
+    }
+
+    .credits_cont2{
+        flex-direction: column;
+        margin-top: 10%;
+        height: max-content;
+    }
+    .creditsc2_scont{
+        width: 100%;
+        height: max-content;
+    }
+    .creditsc2_scont1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .creditsc2_scont1_tcont{
+        margin-top: 5vh;
+    }
+    .creditsc2_scont2{
+        margin-top: 5vh;
+    }
+    .creditsc2_scont2_button{
+        width: 50%;
+        height: 6vh;
+    }
+
+    .credits_copyright_text{
+        bottom: 2%;
+    }
+}
+
+@media(max-width: 800px){
+    .pc_project_img{
+        height: 100%;
+        width: auto;
+    }
+    .pc_project_img1{
+        transform: translateX(-8%);
+    }
+    .pc_project_img2{
+        transform: translateX(-10%);
+    }
+}
+@media(max-width: 700px){
+    .banner_container{
+        align-items: center;
+    }
+    .bc_pattern{
+        transform: translateX(60%);
+    }
+    .bc_slogan{
+        font-size: 800%;
+        margin-left: 0%;
+        margin-bottom: 15%;
+    }
+    .bc_comment_container{
+        margin-left: 0%;
+        width: 70%;
+        height: 12vh;
+    }
+}
+@media(max-width: 600px){
+    .bc_slogan{
+        font-size: 600%;
+    }
+    .pcs_button{
+        width: 80%;
+        height: 60px;
+    }
+    .creditsc1_sc2_text1{
+        font-size: 550%;
+    }
+}
+@media(max-width: 400px){
+    .bc_slogan{
+        font-size: 500%;
+    }
+    .bc_cc_play_icon{
+        font-size: 70%;
+    }
+
+    .cdctc_button{
+        width: 80%;
+        height: 45px;
+    }
+}
